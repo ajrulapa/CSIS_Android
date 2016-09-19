@@ -21,21 +21,20 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/paragraph"
-        android:layout_below="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mission_statement" />
-
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="225px"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/mission"
         android:id="@+id/imageView"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/paragraph"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/mission_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/textView" />
 
 </RelativeLayout>
